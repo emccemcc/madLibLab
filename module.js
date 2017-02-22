@@ -7,9 +7,11 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'input.html'
     })
     .when('/result', {
-      controller: 'Ctrl2',
+      controller: 'Ctrl1',
       templateUrl: 'result.html'
-    });
+    })
+
+    .otherwise({ redirectTo: '/'});
 $locationProvider.hashPrefix('');
 
 });
