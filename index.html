@@ -1,0 +1,28 @@
+<html ng-app="myModule">
+
+<head>
+<!-- AngularJS CDN -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+<script src = 'module.js'> </script>
+<script src = 'controller.js'> </script>
+</head>
+
+<body>
+
+
+  <input type="text" placeholder="First Name" ng-model="firstName">
+  <input type="text" placeholder="Last Name" ng-model="lastName">
+  <button ng-click="fullName(firstName, lastName)">Return Name</button>
+
+
+<ngView></ngView>
+
+
+<!-- Scripts -->
+
+
+</body>
+
+</html>
