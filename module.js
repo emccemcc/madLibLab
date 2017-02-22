@@ -1,6 +1,6 @@
 var app = angular.module('myModule', ['ngRoute']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/input', {
         controller: 'Ctrl1',
@@ -10,6 +10,6 @@ app.config(function($routeProvider){
       controller: 'Ctrl2',
       templateUrl: 'result.html'
     });
-
+$locationProvider.hashPrefix('');
 
 });

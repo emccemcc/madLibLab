@@ -13,12 +13,18 @@
 <body ng-controller="Ctrl1">
 
 
+
   <input type="text" placeholder="First Name" ng-model="firstName">
   <input type="text" placeholder="Last Name" ng-model="lastName">
   <button ng-click="fullName(firstName, lastName)">Return Name</button>
 
 <p>{{finalResult}}</p>
-<ngView></ngView>
+
+<nav>
+  <a href='#/input'>In</a>
+  <a href='#/output'>Out</a>
+</nav>
+<ngView> </ngView>
 
 
 <!-- Scripts -->
