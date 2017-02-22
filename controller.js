@@ -9,12 +9,12 @@ app.controller('Ctrl1', function($scope, ourFactory){
       };
 console.log(displayFullName);
 
+
       ourFactory.ourFunction(displayFullName);
 console.log(ourFactory.returnWord());
 $scope.finalResult = ourFactory.returnWord();
 
   };
-
 
 
 });
