@@ -3,30 +3,30 @@
 <head>
 <!-- AngularJS CDN -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
 <script src = 'module.js'> </script>
 <script src = 'factory.js'> </script>
 <script src = 'controller.js'> </script>
-
+<script src = 'controller2.js'> </script>
 </head>
 
 <body>
 
-
+<!--
 <div ng-controller="Ctrl1">
   <input type="text" placeholder="First Name" ng-model="firstName">
   <input type="text" placeholder="Last Name" ng-model="lastName">
   <button ng-click="fullName(firstName, lastName)">Return Name</button>
 
 <p>{{finalResult}}</p>
-</div>
+</div> -->
 
 <nav>
   <a href='#/input'>In</a>
   <a href='#/result'>Result</a>
 </nav>
-<div ng-view=" "> </div>
+<ng-view></ng-view>
 
 
 <!-- Scripts -->

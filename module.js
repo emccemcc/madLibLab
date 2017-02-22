@@ -7,7 +7,7 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'input.html'
     })
     .when('/result', {
-      controller: 'Ctrl1',
+      controller: 'Ctrl2',
       templateUrl: 'result.html'
     })
 
