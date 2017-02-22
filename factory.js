@@ -1,13 +1,20 @@
 var app = angular.module('myModule');
 
 app.factory('ourFactory', function() {
-  var firstName = {};
-  var lastName = {};
 
+    var finalData = '';
+//returning initial object
 return {
-  ourfunction: function(parameter){
-    myObj = info;
-  }
+  ourFunction: function(displayFullName){
+    finalData = displayFullName.first + ' ' + displayFullName.second;
+
+  },
+//returning the data
+returnWord: function(){
+  return finalData;
+}
+
+//end return
 }
 
 });
