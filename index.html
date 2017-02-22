@@ -7,16 +7,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
 <script src = 'module.js'> </script>
 <script src = 'controller.js'> </script>
+<script src = 'factory.js'> </script>
 </head>
 
-<body>
+<body ng-controller="Ctrl1">
 
 
   <input type="text" placeholder="First Name" ng-model="firstName">
   <input type="text" placeholder="Last Name" ng-model="lastName">
   <button ng-click="fullName(firstName, lastName)">Return Name</button>
 
-
+<p>{{finalResult}}</p>
 <ngView></ngView>
 
 

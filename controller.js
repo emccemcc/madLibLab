@@ -4,12 +4,14 @@ app.controller('Ctrl1', function($scope, ourFactory){
 
   $scope.fullName = function(firstName, lastName){
       var displayFullName = {
-        fist: firstName,
+        first: firstName,
         second: lastName
       };
+console.log(displayFullName);
 
-
-      ourFacotry.x(dispalyFullName);
+      ourFactory.ourFunction(displayFullName);
+console.log(ourFactory.returnWord());
+$scope.finalResult = ourFactory.returnWord();
 
   };
 
