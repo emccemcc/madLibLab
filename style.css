@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=New+Rocker');
+
+
+
 body {
     background-color: black;
     color: white;
+    font-family: "New Rocker", sans-serif;
 }
 
 img {
     max-height: 40%;
     max-width: 40%;
+}
+
+span {
+    font-size: 20px;
 }
