@@ -2,10 +2,12 @@ var app = angular.module('myModule');
 
 app.controller('Ctrl1', function($scope, $location, ourFactory){
 
-  $scope.fullName = function(firstName, lastName){
+  $scope.fullName = function(firstName, middleName, lastName){
       var displayFullName = {
         first: firstName,
-        second: lastName
+        second: middleName,
+        third: lastName
+          
       };
 console.log(displayFullName);
 

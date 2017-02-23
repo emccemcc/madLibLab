@@ -7,7 +7,7 @@ app.factory('ourFactory', function() {
 //returning initial object
 return {
   ourFunction: function(displayFullName){
-  finalData = "Our mad libs phrase is that"  + displayFullName.first + ' has ' + displayFullName.second + '!';
+  finalData = "Welcome to the "  + displayFullName.first + '. We\'ve got '+ displayFullName.second + ' and ' + displayFullName.third + '!';
 },
 
 //returning the data
